@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack --output-library UILib --mode production"
+    "build": "webpack --output-library UILib --mode production",
+    "test": "yarn build && karma start --single-run --auto-watch false"
   },
   "devDependencies": {
     "karma": "^5.2.0",
