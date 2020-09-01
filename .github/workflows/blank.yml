@@ -21,7 +21,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: SelimAbidin/browser-test-action@v2
+  
+      # Debug
+      - name: Debug LS
+        run: ls
 
+      - name: Debug LS
+        run: pwd
+        
       # Runs a single command using the runners shell
       - name: Install
         run: yarn install
